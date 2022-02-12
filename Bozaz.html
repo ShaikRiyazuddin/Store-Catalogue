@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bozaz.css">
+    <title>Document</title>
+</head>
+<body>  
+    <h1 class = "heading">Catalogue Application</h1>
+    <div id="container">
+        <div id="left">
+            <h1 class="h1">Add Product</h1>
+            <hr>
+            <form>
+                <h4 id="h4">Category</h4>
+                <select id="category" name="">
+                    <option value="--">--</option>
+                    <option value="Home Appliance">Home Appliance</option>
+                    <option value="Electronics">Electronic</option>
+                    <option value="Furniture">Furniture</option>
+                    <option value="Books">Books</option>
+                </select>
+                <h4 id="h4">Title</h4>
+                <input id="title" type="text" placeholder="Title"/>
+                <h4 id="h4">Description</h4>
+                <textarea name="" id="desc" cols="30" rows="10"></textarea>
+                <!-- <input id="desc" type="text" placeholder="Description"/> -->
+                <h4 id="h4">Price</h4>
+                <input id="price" type="number" placeholder="Price"/>
+                <input id="submit" type="submit"  value="Add"/>
+            </form>
+           
+        </div>
+        <div id="right">
+            <h1 class="h1">Product info</h1>
+            <select name="" id="sort" onchange="sorting()">
+                <option value="">--</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
+            </select>
+            <select name="" id="cat" onchange="filter()">
+                <option value="Home Appliance">Home Aplliance</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Books">Books</option>
+                <option value="Furniture">Furniture</option>
+            </select>
+            <hr>
+            <table class="table">
+                <thead >
+                    <tr>
+                        <th>#</th>
+                        <th id="boxes">Category</th>
+                        <th id="boxes">Title</th>
+                        <th id="boxes">Description</thid>
+                        <th id="boxes">Price</th>
+                    </tr>
+                    <tbody id="tbody1"></tbody>
+                </thead>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit", addItem);
+    var shoppingList = JSON.parse(localStorage.getItem("totalList")) || [];
+
+
+    function sorting(){
+
+        // document.getElementById("container").innerHTML = "";
+        var sorts = document.getElementById("sort").value;
+
+         if(sorts == "low"){
+        var com = shoppingList.sort(function(a,b){
+        return a.itemPrice - b.itemPrice;
+        })
+        }
+        if(sorts == "high"){
+        var com = shoppingList.sort(function(a,b){
+        return b.itemPrice - a.itemPrice
+    })
+  }
+  displayItems(com)
+  
+}
+
+function filter(){
+    
+    var filters = document.getElementById("cat").value;
+    var com = shoppingList.filter(function(item){
+        if(filters == item.itemCategory){
+            return item
+            console.log(item)
+        }
+    })
+    displayItems(com)
+}
+
+
+
+    function addItem(event){
+        event.preventDefault();
+        var category = document.getElementById("category").value;
+        var title = document.getElementById("title").value;
+        var desc = document.getElementById("desc").value;
+        var price = document.getElementById("price").value;
+        console.log("here")
+        
+        var list = {
+            itemCategory: category,
+            itemTitle: title,
+            itemDesc: desc,
+            itemPrice: price,
+        };
+        shoppingList.push(list);
+        localStorage.setItem("totalList", JSON.stringify(shoppingList));
+        displayItems(shoppingList);
+    }
+    window.addEventListener("load", function(){
+        var shoppingList = JSON.parse(localStorage.getItem("totalList"));
+        displayItems(shoppingList)
+    })
+
+
+
+    function displayItems(shoppingList){
+        document.querySelector("tbody").textContent= "";
+
+        shoppingList.map(function (item, index){
+            
+            var index = index+1
+
+            var tr = document.createElement("tr");
+
+            var tdindex = document.createElement("td");
+            tdindex.setAttribute("class", "index")
+            tdindex.textContent = index+"."; 
+
+            var td1 = document.createElement("td")
+            td1.setAttribute("class", "txt")
+            td1.textContent = item.itemCategory;
+            
+
+            var td2 = document.createElement("td");
+            td2.setAttribute("class", "txt")
+            td2.textContent = item.itemTitle;
+
+            var td3 = document.createElement("td");
+            td3.setAttribute("class", "txt1")
+            td3.textContent = item.itemDesc;
+
+            var td4 = document.createElement("td");
+            td4.setAttribute("class", "txt")
+            td4.textContent = "₹ "+item.itemPrice;
+
+            
+            tr.append(tdindex,td1,td2,td3,td4);
+
+            document.querySelector("tbody").append(tr);
+        })
+    }
+
+</script>

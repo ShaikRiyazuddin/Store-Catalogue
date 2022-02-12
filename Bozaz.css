@@ -1,0 +1,132 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#container{
+    width: 1100px;
+    /* border: 1px solid black; */
+    display: flex;
+    height: 1000px;
+    margin: auto;
+    margin-top: -40px;
+}
+#left{
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 350px;
+    height: 900px;
+}
+#right{
+    /* border: 1px solid black; */
+    margin: auto;
+    width: 700px;
+    height: 900px;
+}
+#category{
+    width: 98%;
+    height: 39px;
+    border-radius: 4px;
+    border: 2px solid rgb(151, 197, 229);
+}
+#title{
+    width: 96%;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid rgb(151, 197, 229);
+
+}
+#desc{
+    width: 96%;
+    height: 80px;
+    text-align: start;
+    padding-top: 0;
+    border-radius: 4px;
+    border: 2px solid rgb(151, 197, 229);
+}
+#price{
+    width: 96%;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid rgb(151, 197, 229);
+}
+#submit{
+    /* background-color: rgb(14, 78, 151); */
+    color: white;
+    width: 40%;
+    height: 30px;
+    box-shadow: rgba(23, 83, 152, 0.3) 0px 0px 0px 3px; 
+    /* padding: 15px 25px; */
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #2eacde;
+    
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px rgb(211, 207, 207);
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-left: 27%;
+}
+#submit:hover{
+    background-color: #2288b0;
+}
+#submit:active {
+background-color: #033e42;
+box-shadow: 0 5px rgb(212, 204, 204);
+transform: translateY(4px);
+}
+.h1{
+    color: teal;
+}
+#tbody1{
+    margin-left: 100px;
+    background-color: rgb(155, 248, 248);
+}
+#boxes{
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+}
+.txt{
+    margin-left: 15px;
+    text-align: center;
+    padding: 10px;
+}
+.txt1{
+    margin-left: 15px;
+    /* text-align: center; */
+    padding: 10px;
+    font-size: 14px;
+}
+.index{
+    width: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+.table{
+    margin-left: 10px;
+}
+#h4{
+    line-height: 1px;
+    font-size: 20px;
+}
+#sort{
+    width: 20%;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid rgb(151, 197, 229);
+}
+#cat{
+    width: 20%;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid rgb(151, 197, 229);
+}
+.heading{
+    color: teal;
+    text-align: center;
+    text-decoration: underline;
+}
