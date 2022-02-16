@@ -1,16 +1,16 @@
 # Store-Catalogue
-An web application to store the information of products in store <a href="https://shaikriyazuddin.github.io/Store-Catalogue/">here.</a>
+An web application to store the information about the products in store <a href="https://shaikriyazuddin.github.io/Store-Catalogue/">here.</a>
 <h1>Table of contents</h1>
 <hr>
 <ul>
-  <a href="#youtube"><li>Basic inference about the company</li></a>
+  <a href="#youtube"><li>Basic inference about the App</li></a>
   <a href="#tech"><li>Frameworks Used</li></a>
   <a href="#feat"><li>Added Features</li></a>
   <a href="#con"><li>Contributors</li></a>
   <a href="#glimps"><li>Glimps of our work</li></a>
 </ul>
 <div id="youtube">
-  <h1>Basic inference about the company</h1>
+  <h1>Basic inference about the App</h1>
   <hr>
 The store catalouge is an web application used to store the information about the products in the store, the application is easy to use and modify
   <div>
