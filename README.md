@@ -44,7 +44,7 @@ The store catalouge is an web application used to store the information about th
   <hr>
   <div>
   <img style="width:100%" src="https://i.ibb.co/SQ6r8Rv/Screenshot-288.png"/>
-    <img style="width:100%" src="https://scontent.fixm4-1.fna.fbcdn.net/v/t39.30808-6/p180x540/273642088_1161358157734035_4910332000262239980_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=B4-G-95-QysAX_ekJ3Y&_nc_ht=scontent.fixm4-1.fna&oh=00_AT8S_qDvnzIOsUZoa2Xt8njLUZzMBsGqeK8KsMzcyBWHRg&oe=6207601B"/>
+    <img style="width:100%" src="https://i.ibb.co/DzGCQRB/Screenshot-290.png"/>
         </div>
     
 </div>
