@@ -36,11 +36,11 @@ The store catalouge is an web application used to store the information about th
     <h1>Contributors</h1>
   <hr>
   <ul>
-  <li><a href="https://github.com/selva658">Selvakumar</a></li>
+  <li><a href="https://github.com/ShaikRiyazuddin">Riyazuddin Shiak</a></li>
   </ul>
     </div>
   <div id="glimps">
-  <h1>Glimps of our work</h1>
+  <h1>Glimps of work</h1>
   <hr>
   <div>
   <img style="width:100%" src="https://scontent.fixm4-1.fna.fbcdn.net/v/t39.30808-6/p180x540/273161230_1161358167734034_4111805528751411784_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=sAictkv9iJYAX-kwCUl&_nc_ht=scontent.fixm4-1.fna&oh=00_AT8wMbxpuvzxK6MgIMWOxYY3mf95oGtlm16s8NmLBdqLbw&oe=6207C168"/>
