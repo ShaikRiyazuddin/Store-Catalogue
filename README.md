@@ -27,7 +27,7 @@ The store catalouge is an web application used to store the information about th
   <h1>Added Features</h1>
   <hr>
   <ul>
-    <li>Categorized list</li>
+    <li>Categorized Adding</li>
     <li>Filter Functionality</li>
     <li>Sort based on price</li>
   </ul>
