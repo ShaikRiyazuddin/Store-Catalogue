@@ -1,18 +1,18 @@
 # Store-Catalogue
-An web application to store the information of products in store <a href="https://selva658.github.io/youtube-clone/">here.</a>
+An web application to store the information of products in store <a href="https://shaikriyazuddin.github.io/Store-Catalogue/">here.</a>
 <h1>Table of contents</h1>
 <hr>
 <ul>
-  <a href="#pantaloons"><li>Basic inference about the company</li></a>
+  <a href="#youtube"><li>Basic inference about the company</li></a>
   <a href="#tech"><li>Frameworks Used</li></a>
   <a href="#feat"><li>Added Features</li></a>
   <a href="#con"><li>Contributors</li></a>
   <a href="#glimps"><li>Glimps of our work</li></a>
 </ul>
-<div id="pantaloons">
+<div id="youtube">
   <h1>Basic inference about the company</h1>
   <hr>
-YouTube is a video sharing service where users can watch, like, share, comment and upload their own videos. The video service can be accessed on PCs, laptops, tablets and via mobile phones.
+The store catalouge is an web application used to store the information about the products in the store, the application is easy to use and modify
   <div>
   <div id="tech">
   <h1>Frameworks Used</h1>
@@ -27,9 +27,9 @@ YouTube is a video sharing service where users can watch, like, share, comment a
   <h1>Added Features</h1>
   <hr>
   <ul>
-    <li>Landing Page</li>
-    <li>Searching functionality</li>
-    <li>Full screen view</li>
+    <li>Categorized list</li>
+    <li>Filter Functionality</li>
+    <li>Sort based on price</li>
   </ul>
   </div>
   <div id="con">
